@@ -10,7 +10,7 @@
 	RUN echo "mysql-server mysql-server/root_password password root" | debconf-set-selections 
 	RUN echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections 
 	RUN DEBIAN_FRONTEND=noninteractive apt-get install -f -y mysql-server && \
-	 DEBIAN_FRONTEND=noninteractive apt-get install -f -y apache2 \
+	 DEBIAN_FRONTEND=noninteractive apt-get install -f -y apache2 && \
 		 wget \
 		 zip \
 		 imagemagick \
