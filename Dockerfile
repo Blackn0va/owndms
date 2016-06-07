@@ -47,8 +47,7 @@
 	RUN sed -i -e 47c"\bind-address            = 127.0.0.2" /etc/mysql/my.cnf 
 	RUN sed -i -e 20c"\port            = 3307" /etc/mysql/my.cnf 
 	RUN sed -i -e 38c"\port            = 3307" /etc/mysql/my.cnf 
-	RUN sed -i -e 1c"\127.0.0.2            = localhost2" /etc/hosts 
-	RUN sed -i -e 2c"\127.0.0.2            = Blacks-Server2" /etc/hosts 
+ 
 	
 
 	
